@@ -26,9 +26,11 @@ jobs:
       - name: Run Tests - Stage
         run: |
           cd backend
+          cd newsfeed-platform
           ./gradlew test
 
       - name: Run Build - Stage
         run: |
           cd backend
+          cd newsfeed-platform
           ./gradlew build
