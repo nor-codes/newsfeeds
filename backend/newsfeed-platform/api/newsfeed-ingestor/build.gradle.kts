@@ -26,11 +26,11 @@ dependencies {
 
 
 application {
-    mainClass = "org.newsfeed.Application"
+    mainClass = "com.learn.newsfeed.Application"
 }
 java {
-    sourceCompatibility = JavaVersion.toVersion("21")
-    targetCompatibility = JavaVersion.toVersion("21")
+    sourceCompatibility = JavaVersion.toVersion("17")
+    targetCompatibility = JavaVersion.toVersion("17")
 }
 
 
