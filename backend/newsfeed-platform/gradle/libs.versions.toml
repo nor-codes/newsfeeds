@@ -1,0 +1,10 @@
+[versions]
+saxon = "12.5"
+snakeyaml = "2.4"
+mockito = "5.16.0"
+slf4j = "2.0.17"
+[libraries]
+saxon-parser = {group = "net.sf.saxon", name = "Saxon-HE", version.ref = "saxon"}
+snakeyaml = {group = "org.yaml", name = "snakeyaml", version.ref = "snakeyaml"}
+mockito-core = {group = "org.mockito", name = "mockito-core", version.ref = "mockito"}
+slf4j = {group = "org.slf4j", name = "slf4j-api", version.ref = "slf4j"}
