@@ -10,3 +10,5 @@ include("libraries")
 include("libraries:logging-util")
 findProject(":libraries:logging-util")?.name = "logging-util"
 include("infrastructure")
+include("libraries:cloud-storage-lib")
+findProject(":libraries:cloud-storage-lib")?.name = "cloud-storage-lib"
