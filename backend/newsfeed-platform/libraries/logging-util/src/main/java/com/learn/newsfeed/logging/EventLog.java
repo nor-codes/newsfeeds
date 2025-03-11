@@ -39,7 +39,7 @@ public class EventLog {
     }
 
     public void log() {
-        String formattedMessage = String.format("[%s] %s", module, message);
+        String formattedMessage = String.format("module: [%s] message: %s", module, message);
         switch (level) {
             case INFO -> LOG.info(formattedMessage);
             case WARN -> LOG.warn(formattedMessage);

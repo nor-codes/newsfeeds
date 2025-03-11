@@ -10,12 +10,8 @@ repositories {
 }
 
 dependencies {
-    implementation(libs.saxon.parser)
-    implementation(libs.snakeyaml)
-    implementation(libs.jackson.databind)
-    testImplementation(libs.mockito.core)
-    implementation(project(":libraries:logging-util"))
-    implementation(project(":libraries:cloud-storage-lib"))
+    implementation(platform(libs.amazon.software.bom))
+    implementation("software.amazon.awssdk:s3")
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
 }
