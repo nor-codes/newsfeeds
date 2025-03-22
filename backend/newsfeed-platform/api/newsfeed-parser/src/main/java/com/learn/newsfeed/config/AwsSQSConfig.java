@@ -13,8 +13,8 @@ public class AwsSQSConfig {
         return SqsAsyncClient.create();
     }
 
-    @Bean
-    public QueueMessagingTemplate queueMessagingTemplate(AmazonSQSAsync amazonSQSAsync) {
-        return new QueueMessagingTemplate(amazonSQSAsync);
-    }
+//    @Bean
+//    public QueueMessagingTemplate queueMessagingTemplate(AmazonSQSAsync amazonSQSAsync) {
+//        return new QueueMessagingTemplate(amazonSQSAsync);
+//    }
 }

@@ -1,4 +1,4 @@
 cloud:
   aws:
     endpoint:
-      uri: https://sqs.us-east-1.amazonaws.com/058264382261/urn-news-crawl
+      uri:
