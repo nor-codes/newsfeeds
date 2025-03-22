@@ -5,6 +5,7 @@ mockito = "5.16.0"
 slf4j = "2.0.17"
 amazon-software-bom="2.30.6"
 jackson-databind ="2.18.2"
+spring-cloud ="2024.0.0"
 [libraries]
 saxon-parser = {group = "net.sf.saxon", name = "Saxon-HE", version.ref = "saxon"}
 snakeyaml = {group = "org.yaml", name = "snakeyaml", version.ref = "snakeyaml"}

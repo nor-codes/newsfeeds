@@ -1,0 +1,10 @@
+# Step 1: Download the XML content
+response = DownloadUtil.download("https://feeds.bbci.co.uk/news/rss.xml")
+xml_content = response.payload  # This is now a string
+
+# Step 2: Save the XML content to a local file
+file_name = "bbc_news_rss.xml"
+with open(file_name, "w", encoding="utf-8") as file:
+    file.write(xml_content)  # Write the string to the file
+
+print(f"File '{file_name}' saved locally.")

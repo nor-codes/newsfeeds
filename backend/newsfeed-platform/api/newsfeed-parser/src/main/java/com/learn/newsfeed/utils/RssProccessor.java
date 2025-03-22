@@ -15,6 +15,7 @@ public class RssProccessor {
     private final String METADATA_SOURCE_LINK_XPATH  = "/rss/channel/link";
     private final String METADATA_TIMESTAMP_XPATH  = "/rss/channel/lastBuildDate";
     private final String METADATA_COPYRIGHT_XPATH = "/rss/channel/copyright";
+
     private void extract(byte[] fileBytes){
         try {
 

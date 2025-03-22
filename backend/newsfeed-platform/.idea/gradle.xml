@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/api/newsfeed-searcher" />
             <option value="$PROJECT_DIR$/infrastructure" />
             <option value="$PROJECT_DIR$/libraries" />
+            <option value="$PROJECT_DIR$/libraries/cloud-storage-lib" />
             <option value="$PROJECT_DIR$/libraries/logging-util" />
           </set>
         </option>
