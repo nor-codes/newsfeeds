@@ -44,7 +44,7 @@ jobs:
 
       - name: Generate and Publish newsfeedcrawler image
         run: |
-          IMAGE_TAG=${{ github.sa }}
+          IMAGE_TAG=${{ github.sha }}
           docker build -t norcodes/newsfeed-crawler:$IMAGE_TAG ./backend/newsfeed-platform/api/newsfeed-crawler
           echo "Pushing Image"
           docker push norcodes/newsfeed-crawler:$IMAGE_TAG
