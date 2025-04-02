@@ -11,4 +11,4 @@ COPY . .
 # Ensure Python recognizes the `src` directory
 ENV PYTHONPATH=/app
 
-CMD ["python", "src/app.py"]
+CMD ["flask", "run", "--host=0.0.0.0"]

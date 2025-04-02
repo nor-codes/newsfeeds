@@ -1,15 +1,14 @@
 from src.download_util import DownloadUtil
 from src.s3_content_util import S3ContentUtil
 from datetime import datetime
+from flask import Flask
 import logging
-import socket
-import time
 import uuid
 import json
 import os
 import boto3
-import schedule
 
+app = Flask(__name__)
 # sources dictionary {name:url}
 logging.basicConfig(
     level=logging.INFO,  # Set logging level
@@ -57,13 +56,16 @@ def scrape():
 
     logger.info(f"Job finished")
 
-if is_development:
-    schedule.every(3).minutes.do(scrape)
-else:
-    schedule.every(1).day.do(scrape)
+@app.route("/crawl",methods=["POST"])
+def crawl():
+    logger.info(f"Starting scrapping")
+    scrape()
+    logger.info(f"Finished scrapping")
 
-logger.info(f"Job Application Started at {socket.gethostbyname(socket.gethostname())}")
+@app.route("/")
+def health():
+    logger.info(f"Health Check")
+    return "I'm healthy..."
 
-while True:
-    schedule.run_pending()
-    time.sleep(1)
+if __name__ == "__main__":
+    app.run()
